@@ -1,5 +1,5 @@
-from datetime import date, datetime
-from enum import IntEnum, auto
+from datetime import date, timedelta
+from enum import IntEnum
 
 
 class Weekday(IntEnum):
@@ -26,9 +26,3 @@ class NextDate:
     def days_until(self):
         """days until given next weekday"""
         return (self.date() - date.today()).days
-
-
-
-
-
-
